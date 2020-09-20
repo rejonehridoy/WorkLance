@@ -27,7 +27,7 @@ To run this project, there are some prerequisites:
 * Require user permission for further functionality.
 -Approximate location(network-based)
 -Precise location(GPS and network-based)
--Modify or delte the contents of your SD card
+-Modify or delete the contents of your SD card
 -Read the contents of your SD card
 -Full network access
 -Receive data from internet
