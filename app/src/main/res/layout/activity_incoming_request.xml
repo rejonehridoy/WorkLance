@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".incomingRequest">
+
+    <include
+        android:id="@+id/toolbarIncomingRequest"
+        layout="@layout/action_bar_onlyback" />
+
+
+
+    <ListView
+        android:id="@+id/list_view_incomingRequest"
+        android:layout_below="@+id/toolbarIncomingRequest"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <TextView
+        android:id="@+id/testTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Test"
+        />
+
+</RelativeLayout>

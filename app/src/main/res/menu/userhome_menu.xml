@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Work In Progress" android:id="@+id/workInProgress"></item>
+    <item android:title="About us" android:id="@+id/aboutus"></item>
+    <item android:title="Feedback" android:id="@+id/Appfeedback"></item>
+    <item android:title="Sign Out" android:id="@+id/signout"></item>
+</menu>

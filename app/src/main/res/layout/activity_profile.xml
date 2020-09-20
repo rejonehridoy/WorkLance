@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile">
+
+    <include
+        android:id="@+id/toolbarProfile"
+        layout="@layout/action_bar_onlyback" />
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/toolbarProfile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/profileRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:layout_centerVertical="true"
+        >
+
+        <ImageView
+            android:id="@+id/profilePicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_person_black_200dp"
+            android:background="@drawable/circle">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/fullnameProfile"
+            android:layout_below="@+id/profilePicture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:text="Full Name"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal">
+        </TextView>
+
+        <TextView
+            android:id="@+id/userNameProfile"
+            android:layout_below="@+id/fullnameProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:text="User ID"
+            android:textSize="20dp"
+            android:gravity="center_horizontal">
+        </TextView>
+
+        <TextView
+            android:id="@+id/userTypeProfile"
+            android:layout_below="@+id/userNameProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"
+            android:text="Worker Type"
+            android:textSize="20dp"
+            android:gravity="center_horizontal">
+        </TextView>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/profileRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        >
+
+        <TextView
+            android:id="@+id/userEmailProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@drawable/ractangle_shape"
+            android:drawablePadding="12dp"
+            android:padding="20dp"
+            android:hint="Email"
+            android:text="Email : rejone.hridoy@gmail.com"
+            android:textColorHint="#666666"
+            android:maxLines="1"
+            android:layout_marginTop="40dp"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/genderProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@drawable/ractangle_shape"
+            android:drawablePadding="12dp"
+            android:padding="20dp"
+            android:hint="Gender "
+            android:textColorHint="#666666"
+            android:maxLines="1"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/phoneProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@drawable/ractangle_shape"
+            android:drawablePadding="12dp"
+            android:padding="20dp"
+            android:hint="Contact No. "
+            android:textColorHint="#666666"
+            android:maxLines="1"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/addressProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@drawable/ractangle_shape"
+            android:drawablePadding="12dp"
+            android:padding="20dp"
+            android:hint="Address "
+            android:textColorHint="#666666"
+            android:maxLines="5"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/ratingProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@drawable/ractangle_shape"
+            android:drawablePadding="12dp"
+            android:padding="20dp"
+            android:hint="Rating "
+            android:textColorHint="#666666"
+            android:maxLines="1"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/editProfileButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_signup"
+            android:text="Edit Profile"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="15dp"
+            android:clickable="true"
+            android:padding="16dp"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

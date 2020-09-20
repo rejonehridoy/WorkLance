@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MapActivity2">
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="85dp"
+        android:id="@+id/map"
+        tools:context=".MapsActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:elevation="10dp"
+            android:background="@drawable/white_border"
+            android:id="@+id/relLayout1">
+
+
+            <!--<AutoCompleteTextView
+                android:id="@+id/autoCompleteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="search your location here..."
+                android:layout_weight="1"
+                app:layout_constraintTop_toTopOf="parent" />-->
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:id="@+id/ic_magnify"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_magnify"/>
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/ic_magnify"
+                android:layout_centerVertical="true"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:id="@+id/autoCompleteTextView"
+                android:background="@null"
+                android:hint="search your location here..."
+                android:imeOptions="actionSearch"/>
+
+            <ImageView
+                android:id="@+id/ic_cancel_icon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="-34dp"
+                android:layout_marginTop="15dp"
+                android:visibility="invisible"
+                android:layout_toRightOf="@+id/autoCompleteTextView"
+                android:src="@drawable/ic_cancel_icon" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ic_mylocation"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/relLayout1"
+            android:layout_gravity="right"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/ic_gps" />
+
+
+        <LinearLayout
+
+            android:id="@+id/locationLayout"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/colorPrimary"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:text="To set your current location as address, turn on location services"
+                >
+            </TextView>
+            <Button
+                android:id="@+id/locationButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Turn on location"
+                android:textColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/colorPrimary"
+                >
+            </Button>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/confirmButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_signup"
+        android:text="Confirm"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="15dp"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:padding="16dp"/>
+
+
+
+
+</RelativeLayout>

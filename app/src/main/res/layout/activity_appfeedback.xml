@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Appfeedback">
+
+    <include
+        android:id="@+id/toolbarFeedback"
+        layout="@layout/action_bar_onlyback" />
+
+
+    <LinearLayout
+        android:layout_below="@id/toolbarFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/AF_subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:background="@android:color/transparent"
+            android:drawablePadding="12dp"
+            android:padding="8dp"
+            android:hint="Subject"
+            android:drawableLeft="@drawable/ic_create_black_24dp"
+            android:textColorHint="#666666"
+            android:maxLines="1"
+            android:layout_marginTop="40dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#666666" />
+
+
+
+        <EditText
+            android:id="@+id/AF_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:background="@android:color/transparent"
+            android:drawablePadding="12dp"
+            android:padding="8dp"
+            android:hint="Message "
+            android:drawableLeft="@drawable/ic_message_black_24dp"
+            android:textColorHint="#666666"
+            android:maxLines="10"
+            android:layout_marginTop="40dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#666666" />
+
+        <Button
+            android:id="@+id/AF_submitbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_signup"
+            android:text="Submit"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="15dp"
+            android:clickable="true"
+            android:padding="16dp"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/ractangle_shape_02"
+        android:layout_margin="5dp"
+
+        >
+
+        <TextView
+            android:id="@+id/CLVproblemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/CLVproblemDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/white"
+            android:text="Curabitur su fringdolor sit amet, consectetur adipiscing elit."
+            android:textStyle="bold"
+            android:textSize="20dp"
+            ></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            >
+            <TextView
+                android:id="@+id/UserOrServiceManText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Serviceman Name:  "
+                android:textStyle="bold"
+                android:textColor="#CCCCCC"
+                android:textSize="20dp"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/CLVservicemanName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N/A"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                ></TextView>
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:layout_weight=".5"
+                >
+
+                <TextView
+                    android:id="@+id/CLVworkerType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Electrician"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    ></TextView>
+
+                <TextView
+                    android:id="@+id/CLVdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20/03/2020"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    ></TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight=".5"
+                >
+
+                <TextView
+                    android:id="@+id/CLVprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TK: 1000"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    ></TextView>
+
+                <TextView
+                    android:id="@+id/CLVstatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Completed"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    ></TextView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

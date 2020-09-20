@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".workInProgress">
+
+    <include
+        android:id="@+id/toolbarWorkInProgress"
+        layout="@layout/action_bar_onlyback" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@+id/toolbarWorkInProgress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            >
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:hint="Allocated Serviceman:"
+                android:textSize="23dp"
+                ></TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:id="@+id/profilePicture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/ic_person_black_200dp"
+                    android:background="@drawable/circle2">
+                </ImageView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="20dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/WIP_servicemanName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Abdul Boshir"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:textSize="25dp"
+                        ></TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="2"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Rating: "
+                            android:textSize="20dp"
+                            android:layout_weight=".9"
+                            ></TextView>
+
+
+                        <TextView
+                            android:id="@+id/WIP_rating"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="4.5/5 "
+                            android:textStyle="bold"
+                            android:textSize="23dp"
+                            android:layout_weight=".5"
+                            ></TextView>
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2"
+                    android:layout_marginTop="15dp"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:hint="Contact Number:"
+                        android:textSize="20dp"
+                        ></TextView>
+
+                    <TextView
+                        android:id="@+id/WIP_ContactNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="+8801234567891"
+                        android:textStyle="bold"
+                        android:layout_weight=".5"
+                        android:textSize="23dp"
+                        ></TextView>
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:hint="Work Information:"
+                android:textSize="20dp"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/WIP_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TV Repair"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="23dp"
+                ></TextView>
+
+
+            <TextView
+                android:id="@+id/WIP_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Curabitur suscipit, ai sgilla, consequat "
+                android:textStyle="bold"
+                android:textSize="23dp"
+                ></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="2"
+                android:layout_marginTop="15dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Requested Date:"
+                    android:textSize="20dp"
+                    android:layout_weight=".8"
+                    ></TextView>
+
+                <TextView
+                    android:id="@+id/WIP_requestDateTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="28/02/2020"
+                    android:textStyle="bold"
+                    android:textSize="23dp"
+                    android:layout_weight=".5"
+                    ></TextView>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="2"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Start Date:"
+                    android:textSize="20dp"
+                    android:layout_weight=".8"
+                    ></TextView>
+
+                <TextView
+                    android:id="@+id/WIP_startTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="20/10/2020 12:59 PM"
+                    android:textStyle="bold"
+                    android:textSize="23dp"
+                    android:layout_weight=".5"
+                    ></TextView>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="2"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Price: (TK)"
+                    android:textSize="20dp"
+                    android:layout_weight=".8"
+                    ></TextView>
+
+                <TextView
+                    android:id="@+id/WIP_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2000"
+                    android:textStyle="bold"
+                    android:textSize="23dp"
+                    android:layout_weight=".5"
+                    ></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="2"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Status:"
+                    android:textSize="20dp"
+                    android:layout_weight=".8"
+                    ></TextView>
+
+                <TextView
+                    android:id="@+id/WIP_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="In Progress"
+                    android:textStyle="bold"
+                    android:textSize="23dp"
+                    android:layout_weight=".5"
+                    ></TextView>
+
+            </LinearLayout>
+
+
+
+
+            <Button
+                android:id="@+id/WIP_CompleteButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_signup"
+                android:text="Complete"
+                android:textColor="#fff"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="10dp"
+                android:clickable="true"
+                android:padding="16dp"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</RelativeLayout>

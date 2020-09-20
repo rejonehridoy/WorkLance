@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:gravity="center"
+    android:background="@color/splashscreen"
+    tools:context=".SplashScreen">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp">
+
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alegreya_sc"
+            android:text="WorkLance"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+
+
+        <RelativeLayout
+            android:id="@+id/rellay1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/appName"
+            android:layout_marginTop="250dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/loginButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_login"
+                        android:text="Log in"
+                        android:textColor="#f16f7d"
+                        android:textAllCaps="false"
+                        android:padding="16dp"
+                        android:clickable="true"
+                        android:textSize="18sp"/>
+
+                    <Button
+                        android:id="@+id/signUpButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_signup"
+                        android:text="Sign up"
+                        android:textColor="#fff"
+                        android:textAllCaps="false"
+                        android:textSize="18sp"
+                        android:layout_marginTop="16dp"
+                        android:clickable="true"
+                        android:padding="16dp"/>
+
+                    <ProgressBar
+                        android:layout_gravity="center"
+                        android:id="@+id/signInProgressBar"
+                        android:visibility="invisible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+        </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rellay2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:visibility="gone">
+
+    </RelativeLayout>
+
+</RelativeLayout>

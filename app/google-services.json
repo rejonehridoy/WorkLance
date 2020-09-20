@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "792977173910",
+    "firebase_url": "https://worklance-338b4.firebaseio.com",
+    "project_id": "worklance-338b4",
+    "storage_bucket": "worklance-338b4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792977173910:android:74dcc310cf191f8f58c1b7",
+        "android_client_info": {
+          "package_name": "com.example.worklance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "792977173910-7kdtlhnpbdn83cmjbk3902nr6re14lpi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.worklance",
+            "certificate_hash": "8eb9f446c6e18ed4c51f16a472235d96f21a4fec"
+          }
+        },
+        {
+          "client_id": "792977173910-sr8mjd1jk02i7voca42nqlje3r4s7rk9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCm4GsPHrZ2dyDJ-cK6wCiMLPINIlgHbE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "792977173910-sr8mjd1jk02i7voca42nqlje3r4s7rk9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

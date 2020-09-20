@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".userHome">
+
+    <include
+        android:id="@+id/toolbarUserHome"
+        layout="@layout/action_bar_onlyback" />
+
+    <LinearLayout
+        android:id="@+id/addressLayout"
+        android:layout_below="@+id/toolbarUserHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/custome_shape"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/addTextviewUserHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:drawablePadding="12dp"
+            android:padding="8dp"
+            android:hint="Address "
+            android:drawableLeft="@drawable/ic_place_black_24dp"
+            android:textColorHint="#666666"
+            android:maxLines="5"
+            android:layout_marginTop="40dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#666666" />
+
+        <Button
+            android:id="@+id/changeLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@color/white"
+            android:text="Change Location"
+            android:textSize="18dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/addressLayout"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutRqstPro"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_weight=".5">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/button_layout_blue"
+                    >
+
+                    <ImageView
+                        android:id="@+id/requstIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginLeft="7dp"
+                        android:src="@drawable/ic_add_circle_black_24dp">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/requestTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Request"
+                        android:layout_below="@+id/requstIcon"
+                        android:layout_marginTop="30dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/background_color"
+                        android:layout_marginLeft="15dp"
+                        >
+
+                    </TextView>
+
+                    <Button
+                        android:id="@+id/requstButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:background="@color/cardview_shadow_end_color"
+                        />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_weight=".5">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/button_pink"
+                    >
+
+                    <ImageView
+                        android:id="@+id/profileustIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginLeft="7dp"
+                        android:src="@drawable/ic_person_black_50dp">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Profile"
+                        android:layout_below="@+id/profileustIcon"
+                        android:layout_marginTop="30dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/background_color"
+                        android:layout_marginLeft="15dp"
+                        >
+
+                    </TextView>
+
+                    <Button
+                        android:id="@+id/profileButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:background="@color/cardview_shadow_end_color"
+                        />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+            
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_below="@+id/linearLayoutRqstPro"
+            android:orientation="horizontal">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight=".5">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/button_layout_yellow"
+                        >
+
+                        <ImageView
+                            android:id="@+id/historyIcon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginLeft="7dp"
+                            android:src="@drawable/ic_history_black_24dp">
+
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="History"
+                            android:layout_below="@+id/historyIcon"
+                            android:layout_marginTop="30dp"
+                            android:textSize="20dp"
+                            android:textColor="@color/background_color"
+                            android:layout_marginLeft="15dp"
+                            >
+
+                        </TextView>
+
+                        <Button
+                            android:id="@+id/historyButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@color/cardview_shadow_end_color"
+                            />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight=".5">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/button_layout_green"
+                        >
+
+                        <ImageView
+                            android:id="@+id/servicemanselectionIcon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginLeft="7dp"
+                            android:src="@drawable/ic_featured_play_list_black_24dp">
+
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Serviceman Selection"
+                            android:layout_below="@+id/servicemanselectionIcon"
+                            android:layout_marginTop="15dp"
+                            android:textSize="20dp"
+                            android:textColor="@color/background_color"
+                            android:layout_marginLeft="15dp"
+                            >
+
+                        </TextView>
+
+                        <Button
+                            android:id="@+id/servicemanSelectionButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@color/cardview_shadow_end_color"
+                            />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

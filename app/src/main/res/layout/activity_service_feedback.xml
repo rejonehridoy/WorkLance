@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".serviceFeedback">
+
+    <include
+        android:id="@+id/toolbarServiceFeedback"
+        layout="@layout/action_bar_onlyback" />
+
+    <LinearLayout
+        android:layout_below="@+id/toolbarServiceFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:hint="Allocated Serviceman:"
+            android:textSize="25dp"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/SF_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Abdul Boshir"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            ></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/SF_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+8801234567891"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                ></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rating: "
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/SF_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.5/5"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                ></TextView>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Rating:(Out of 5)"
+            android:layout_marginTop="30dp"
+            android:textSize="25dp"
+            >
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/SF_ratingET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@android:color/transparent"
+            android:drawablePadding="12dp"
+            android:padding="8dp"
+            android:inputType="numberDecimal"
+            android:hint="ex: 4.5 "
+            android:textColorHint="#666666"
+            android:maxLines="1"
+            android:layout_marginTop="10dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#666666" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Additional Feedback"
+            android:layout_marginTop="30dp"
+            android:textSize="25dp"
+            >
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/SF_feedbackET"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:maxLines="20"
+            android:padding="8dp"
+            android:singleLine="false"
+            android:textColorHint="#666666" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#666666" />
+
+        <Button
+            android:id="@+id/SF_submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_signup"
+            android:text="Submit"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:padding="16dp"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
