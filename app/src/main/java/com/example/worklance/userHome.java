@@ -360,7 +360,7 @@ public class userHome extends AppCompatActivity implements View.OnClickListener 
                 .setSmallIcon(R.drawable.worklance_logo)
                 .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.drawable.worklance_logo))
                 .setContentTitle("Cancelation of Work")
-                .setContentText("Work has cancelled by username : "+serviceman)
+                .setContentText("Work has cancelled by : "+serviceman)
                 .setContentIntent(pendingIntent)
                 .setAutoCancel(true);
 
