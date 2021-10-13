@@ -56,9 +56,5 @@ After the prerequisites, clicking `run` on **Android Studio** can run this proje
 ## Status 
 Project is recently developed with currently required and possible features.
 
-## For Firebase Access 
-Email: softwaredevelopment2200@gmail.com<br/>
-Password: csesd2200
-
 
 
